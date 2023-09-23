@@ -95,7 +95,48 @@ console.log(category);
 */
 
 //CODE HERE
-
+const foodArr = [
+    {
+        name: 'steak',
+        price: 20,
+        category: 'entree',
+        popularity: 10,
+        rating: 10,
+        tags: ['gluten free', 'meat', 'organic']
+    },
+    {
+        name: 'cesar salad',
+        price: 8,
+        category: 'side',
+        popularity: 5,
+        rating: 6,
+        tags: ['organic', 'vegan', 'gluten']   
+    },
+    {
+        name: 'country fired steak',
+        price: 15,
+        category: 'entree',
+        popularity: 4,
+        rating: 8,
+        tags: ['gluten', 'meat']   
+    },
+    {
+        name: 'deep fried and breaded pickles',
+        price: 8,
+        category: 'side',
+        popularity: 9,
+        rating: 8,
+        tags: ['gluten', 'organic']    
+    },
+    {
+        name: 'baked potato',
+        price: 5,
+        category: 'side',
+        popularity: 8,
+        rating: 6,
+        tags: ['gluten free', 'organic']   
+    }
+]
 
 
 //////////////////PROBLEM 4////////////////////
@@ -112,8 +153,8 @@ console.log(category);
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
+const filteredFood = foodArr.filter((el) => el.tags.includes('meat'))
+console.log(filteredFood)
 
 
 //////////////////PROBLEM 5////////////////////
