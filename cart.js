@@ -35,7 +35,10 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.reduce((accumulator, currentItem)=>{
+    return accumulator + currentItem.price
+}, 0)
+console.log(summedPrice)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -54,7 +57,12 @@ const cart = [
 */
 
 //CODE HERE
-
+function calcFinalPrice(cartTotal, tax, couponValue){
+   const taxAmount = cartTotal * tax
+   const finalPrice = cartTotal + taxAmount - couponValue
+   return finalPrice
+}
+console.log(calcFinalPrice(summedPrice, .06, 5))
 
 
 //////////////////PROBLEM 3////////////////////
@@ -79,7 +87,10 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
-
+1st. name: 'string' - you need to know who your customers are
+2nd. phoneNumber: number no hiphens - need to be able to contact your customer
+3rd. email: 'string' - posible rewards program
+4th. cartTotal: number - it is a cart after all
 */
 
 /*
@@ -88,3 +99,9 @@ const cart = [
 */
 
 //CODE HERE
+const customer = {
+    name: 'John Doe',
+    phoneNumber: 1234567890,
+    email: 'johndoe@gmail.com',
+    cartTotal: 49.26
+}
