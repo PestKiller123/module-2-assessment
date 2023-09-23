@@ -38,7 +38,7 @@ const pizza = {
     popularity: 8,
     rating: 7,
     tags: ['1 topping', 'all organic']
-}
+};
 
 
 //////////////////PROBLEM 2////////////////////
@@ -50,7 +50,7 @@ const pizza = {
 */
 
 //CODE HERE
-console.log(pizza.popularity)
+console.log(pizza.popularity);
 
 /*
     Second, log the second tag in your pizza's
@@ -60,7 +60,7 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
-
+console.log(pizza.tags[1]);
 
 /*
     Third, destructure the price off of the
@@ -70,8 +70,8 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
-
-
+let {price} = pizza;
+console.log(price);
 /*
     Fourth, and last, destructure the category
     property.
@@ -80,8 +80,8 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
-
-
+let {category} = pizza;
+console.log(category);
 //////////////////PROBLEM 3////////////////////
 /* 
     Create an array with about 5 objects in it.
